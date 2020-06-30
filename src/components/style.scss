@@ -27,3 +27,40 @@
 		color: $secondary-color;
 	}
 }
+
+div .background {
+	color: $white;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	padding-left: 60px;
+	padding-right: 60px;
+	font-family: "SF UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: italic;
+
+	span {
+		font-size: 2rem;
+		display: block;
+		font-weight: 300;
+		text-transform: lowercase;
+		font-style: normal;
+	}
+
+}
+.gradientBg {
+	background-image: linear-gradient(-225deg, #c82a70 0%, #ff6600 52%, #c82a70 100%);
+}
+.hero-body {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+
+
+.background {
+	// background-image: radial-gradient(circle at -16.45% 74.18%, #e3a83a 0, #e99e38 7.14%, #ef9437 14.29%, #f48838 21.43%, #f77b3a 28.57%, #f96c3d 35.71%, #fa5b41 42.86%, #f94646 50%, #f72c4c 57.14%, #f40054 64.29%, #f0005e 71.43%, #ea0069 78.57%, #e30075 85.71%, #da0082 92.86%, #d00091 100%);
+	background-image: linear-gradient(-225deg, #c82a70 0%, #ff6600 52%, #c82a70 100%);
+}

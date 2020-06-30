@@ -2,7 +2,7 @@ import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
 import './style.scss';
-import logo from '../images/logo-med.png';
+import logo from '../images/logo@128.png';
 
 
 const Navbar = () => (

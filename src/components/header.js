@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 
 import './style.scss';
 
-import logo from '../images/logo-med.png';
+import logo from '../images/logo@128.png';
 
 import Navbar from './navbar';
 
