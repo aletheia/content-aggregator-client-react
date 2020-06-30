@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaUserCircle } from 'react-icons/fa';
 
 import './style.scss';
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+import logo from '../images/logo-med.png';
+
 
 const Navbar = () => (
 	<div className="hero-head is-hidden-mobile">
@@ -12,23 +12,20 @@ const Navbar = () => (
 				<div className="navbar-brand">
 					<a
 						className="navbar-item"
-						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
+						href="https://www.serverless4all.com"
 					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
+						<img src={logo} alt="site-logo" />
+
 					</a>
 				</div>
 				<div id="navbarMenuHeroA" className="navbar-menu">
 					<div className="navbar-end">
 						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-							>
+							<a className="has-text-white" href="/about">
 								<span className="icon">
-									<FaGithub size="fa-2x" />
+									<FaUserCircle size="fa-2x" />
 								</span>
-								<span>Download</span>
+								<span>About</span>
 							</a>
 						</span>
 					</div>

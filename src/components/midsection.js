@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-	FaSass,
-	FaHtml5,
-	FaReact,
-	FaMobileAlt,
 	FaRocket,
-	FaOsi
+	FaRss,
+	FaVideo,
+	FaSlideshare,
+	FaGithub,
+	FaUser,
 } from 'react-icons/fa';
 
 import './style.scss';
@@ -20,15 +20,14 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaSass size="fa-2x" color="#d22780" />
+									<FaRocket size="fa-2x" className="has-text-danger" />
 								</span>
 							</figure>
 							<div className="media-content">
 								<div className="content">
-									<h1 className="title is-size-4">Uses Bulma</h1>
+									<h1 className="title is-size-4">Why this site?</h1>
 									<p className="subtitle is-size-5">
-										Bulma is an open source CSS framework and used by more than
-										100,000 developers.
+										This corner on the web is about modern apps and architectures that  can be built using tools available on  cloud.
 									</p>
 								</div>
 							</div>
@@ -38,16 +37,14 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaHtml5 size="fa-2x" className="has-text-danger" />
+									<FaRss size="fa-2x" className="has-text-danger" />
 								</span>
 							</figure>
 							<div className="media-content">
 								<div className="content">
-									<h1 className="title is-size-4">JAMStack Solution</h1>
+									<h1 className="title is-size-4">Articles</h1>
 									<p className="subtitle is-size-5">
-										It’s a new way of building websites and apps that delivers
-										better performance, higher security, lower cost of scaling,
-										and a better developer experience.
+										A collection of articles about serverless technologies and architectures.
 									</p>
 								</div>
 							</div>
@@ -57,16 +54,14 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaReact size="fa-2x" color="#5e227f" />
+									<FaVideo size="fa-2x" className="has-text-primary-dark" />
 								</span>
 							</figure>
 							<div className="media-content">
 								<div className="content">
-									<h1 className="title is-size-4">Gatsby + React?</h1>
+									<h1 className="title is-size-4">Videos</h1>
 									<p className="subtitle is-size-5">
-										Uses Gatsby's version <code>v2</code>, enjoy the power of
-										the latest web technologies. All set up and waiting for you
-										to start building.
+										Live coding videos, talks and architecture presentations recorded on various occasions.
 									</p>
 								</div>
 							</div>
@@ -76,12 +71,12 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaMobileAlt size="fa-2x" color="blue" />
+									<FaSlideshare size="fa-2x" className="has-text-info" />
 								</span>
 							</figure>
 							<div className="media-content">
 								<div className="content">
-									<h1 className="title is-size-4">Responsive Design</h1>
+									<h1 className="title is-size-4">Slides</h1>
 									<p className="subtitle is-size-5">
 										Bulma is based on the Flexbox model and built with Sass. The
 										simplest grid system Just add columns, they will resize
@@ -96,7 +91,7 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaOsi size="fa-2x" className="has-text-primary" />
+									<FaGithub size="fa-2x" className="has-text-primary" />
 								</span>
 							</figure>
 							<div className="media-content">
@@ -114,12 +109,12 @@ const Midsection = () => (
 						<article className="media">
 							<figure className="media-left">
 								<span className="icon is-medium">
-									<FaRocket size="fa-2x" className="has-text-danger" />
+									<FaUser size="fa-2x" className="has-text-blue" />
 								</span>
 							</figure>
 							<div className="media-content">
 								<div className="content">
-									<h1 className="title is-size-4">Starter Kit</h1>
+									<h1 className="title is-size-4">About Me</h1>
 									<p className="subtitle is-size-5">
 										This starter kit is target to developers who are looking
 										forward to use Bulma along with GatsbyJS. You can read more
