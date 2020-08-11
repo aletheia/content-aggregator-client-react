@@ -1,0 +1,484 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Colors */
+.accent {
+  color: #db5d1e;
+}
+.background-low {
+  color: #333333;
+}
+.primary {
+  color: #3264ff;
+}
+.secondary {
+  color: #d1e1e6;
+}
+.background-high {
+  color: #151122;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "latoblack";
+  src: url("fonts/lato-black-webfont.woff2") format("woff2"),
+    url("fonts/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url("fonts/lato-bold-webfont.woff2") format("woff2"),
+    url("fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latolight";
+  src: url("fonts/lato-light-webfont.woff2") format("woff2"),
+    url("fonts/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url("./fonts/lato-regular-webfont.woff2") format("woff2"),
+    url("./fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latohairline";
+  src: url("fonts/lato-thin-webfont.woff2") format("woff2"),
+    url("fonts/lato-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #d1e1e6;
+  background-color: #151122;
+
+  font-family: "latoregular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.header {
+  height: 5vh;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  text-align: left;
+  font-family: "latoblack";
+  color: #2bacbd;
+  font-size: 2em;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20 0 20 0;
+}
+.picture img {
+  height: 20vh;
+}
+
+.menu {
+  font-family: "latobold";
+  font-size: 1.2em;
+  text-align: right;
+  color: #d1e1e6;
+}
+
+.menu a {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #d1e1e6;
+}
+
+.menu a:last-of-type {
+  border-right: none;
+}
+.subtitle {
+  letter-spacing: 2px;
+  font-family: "latolight";
+  color: #d1e1e6;
+  font-size: 1em;
+  transform: scaleX(1.15);
+  transform-origin: 0 0;
+  text-align: left;
+}
+
+.social {
+  font-family: "latolight";
+  color: #d1e1e6;
+  font-size: 1em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a {
+  margin-right: 5px;
+  justify-content: space-between;
+}
+
+.social a:last-of-type {
+  margin-right: 0;
+}
+
+.section {
+  display: block;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.section,
+span {
+  display: block;
+}
+
+.section h1 {
+  background: -webkit-linear-gradient(#3264ff, #2bacbd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+
+.blog {
+  margin: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.blog .post {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(209, 225, 230, 0.1);
+}
+
+.blog h2 {
+  font-family: "latolight";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  line-height: 2em;
+  font-style: italic;
+  border-bottom: 1px solid rgba(209, 225, 230, 0.1);
+}
+
+.blog .title {
+  font-family: "latobold";
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: #3264ff;
+  width: 70%;
+}
+
+.blog p {
+  font-family: "latolight";
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+
+.blog p strong {
+  font-family: "latoregular";
+  color: #db5d1e;
+}
+
+.blog .more {
+  display: block;
+  font-family: "latoregular";
+  color: #db5d1e;
+  padding-bottom: 10px;
+}
+
+.tags {
+  font-family: "latolight";
+  display: flex;
+  float: right;
+}
+
+.tags li {
+  margin: 5px;
+  padding: 3px;
+
+  padding-right: 5px;
+  color: #d1e1e6;
+  border: 0.5px solid #db5d1e;
+  background-color: #db5d1e;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  border-radius: 5px;
+  align-items: center;
+}
+.fas,
+.far {
+  margin-right: 0.5em;
+}
+
+.blog .datetime {
+  font-family: "latobold";
+  font-style: italic;
+  color: #151122;
+  border: 0.5px solid #d1e1e6;
+  background-color: #d1e1e6;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.6em;
+
+  width: max-content;
+  border-radius: 0.4em;
+}
+
+/* Animation */
+
+.area {
+  background: #151122;
+  background: -webkit-linear-gradient(to left, #3264ff, #151122);
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(209, 225, 230, 0.1);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  .container {
+    overflow: scroll;
+  }
+  .header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #151122;
+    z-index: 10;
+  }
+
+  .header h1 {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #151122;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(209, 225, 230, 0.1);
+  }
+
+  .menu a {
+    padding-right: 20px;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    line-height: 2.5em;
+    text-align: center;
+    transform: scaleX(1);
+  }
+
+  .section {
+    position: relative;
+    top: 150px;
+  }
+
+  .section h1 {
+    font-size: 5em;
+    letter-spacing: 0.1em;
+  }
+  .blog .title {
+    display: block;
+    line-height: 3em;
+    font-size: 3em;
+  }
+
+  .blog p {
+    font-size: 1em;
+    line-height: 3em;
+  }
+  .blog .more {
+    line-height: 4em;
+    margin-bottom: 20px;
+  }
+
+  .tags {
+    display: none;
+    float: left;
+  }
+  .tags li {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .blog .datetime {
+    font-family: "latolight";
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1.2em;
+    width: max-content;
+    border-radius: 0.7em;
+  }
+}
