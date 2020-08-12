@@ -1,0 +1,23 @@
+@import "./reset.scss";
+@import "./colors.scss";
+
+body {
+  color: #d1e1e6;
+  background-color: #151122;
+
+  font-family: "latoregular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+li {
+  list-style: none;
+}
