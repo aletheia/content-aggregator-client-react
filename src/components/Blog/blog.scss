@@ -1,0 +1,30 @@
+@import '../../style/colors.scss';
+
+.blog {
+  //margin: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.blog .latest {
+  margin-bottom: 40px;
+}
+
+.blog .post {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(209, 225, 230, 0.1);
+}
+
+.blog h2 {
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  line-height: 2em;
+  font-style: italic;
+  border-bottom: 1px solid rgba(209, 225, 230, 0.1);
+}
+
+@import './blog.mobile.scss';

@@ -1,0 +1,66 @@
+@import '../../../style/colors.scss';
+
+.blog .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: $primary-color;
+  width: 70%;
+}
+
+.blog p {
+  font-weight: lighter;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+  strong {
+    font-weight: normal;
+    color: $accent-color;
+  }
+}
+
+.blog .more {
+  display: block;
+  font-weight: normal;
+  color: $accent-color;
+  padding-bottom: 10px;
+}
+
+.blog .tags {
+  font-weight: lighter;
+  display: flex;
+  float: right;
+  li {
+    margin: 5px;
+    padding: 3px;
+    padding-right: 5px;
+    color: $text-color;
+    border: 0.5px solid $accent-color;
+    background-color: $accent-color;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+
+.fa-icon {
+  margin-right: 0.5em;
+}
+
+.blog .datetime {
+  font-weight: bold;
+  font-style: italic;
+  color: $background-color;
+  border: 0.5px solid $text-color;
+  background-color: $text-color;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.6em;
+  width: max-content;
+  border-radius: 0.4em;
+}
+
+@import './entry.mobile.scss';
