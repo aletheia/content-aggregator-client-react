@@ -1,0 +1,34 @@
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .blog .title {
+    display: block;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  .blog p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .blog .more {
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+
+  .blog .tags {
+    display: none;
+    float: left;
+  }
+  .tags li {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+
+  .blog .datetime {
+    font-weight: bold;
+    padding: 1em;
+    width: max-content;
+    border-radius: 0.7em;
+  }
+}

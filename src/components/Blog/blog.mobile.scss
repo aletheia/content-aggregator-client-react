@@ -1,0 +1,9 @@
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .blog {
+    display: block;
+    position: relative;
+    h2 {
+      margin-top: 25vh;
+    }
+  }
+}

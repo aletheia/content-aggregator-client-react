@@ -1,0 +1,28 @@
+@import "./reset.scss";
+@import "./colors.scss";
+@import "./fonts.scss";
+
+$font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+body {
+  color: $foreground-color;
+  background-color: $background-color;
+
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+@import "./theme.mobile.scss";
