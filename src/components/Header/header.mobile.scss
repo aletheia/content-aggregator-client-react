@@ -1,4 +1,4 @@
-@import "../../style/colors.scss";
+@import '../../style/colors.scss';
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .header {
@@ -23,7 +23,7 @@
     font-size: 1.5em;
     text-align: center;
     background-color: #151122;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: 1px solid rgba(209, 225, 230, 0.1);
     a {
       padding-right: 20px;
@@ -35,6 +35,6 @@
     font-size: 1.2em;
     text-align: center;
     transform: scaleX(1);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
