@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import App from "./components/App";
-import { BoxAnimation } from "./components/Animation";
-import * as serviceWorker from "./serviceWorker";
+import App from './components/App';
+import { BoxAnimation } from './components/Animation';
+import * as serviceWorker from './serviceWorker';
 
-import "./index.scss";
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +13,7 @@ ReactDOM.render(
       <App />
     </BoxAnimation>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

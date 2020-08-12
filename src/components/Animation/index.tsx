@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import "./Animation.scss";
+import React, { ReactNode } from 'react';
+import './animation.scss';
 
 export const BoxAnimation = ({ children }: { children: ReactNode }) => {
   return (
