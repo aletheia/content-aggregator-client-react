@@ -1,5 +1,10 @@
 $primary-color: #3264ff;
-$sencodary-color: #d1e1e6;
+$secondary-color: #2bacbd;
+$foreground-color: #d1e1e6;
 $accent-color: #db5d1e;
 $background-dark-color: #151122;
 $background-light-color: #333333;
+
+$background-color: $background-dark-color;
+$text-color: $foreground-color;
+$title-color: $primary-color;

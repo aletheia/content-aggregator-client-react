@@ -1,11 +1,14 @@
 @import "./reset.scss";
 @import "./colors.scss";
+@import "./fonts.scss";
+
+$font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 
 body {
-  color: #d1e1e6;
-  background-color: #151122;
+  color: $foreground-color;
+  background-color: $background-color;
 
-  font-family: "latoregular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: $font-family;
 }
 
 a {
@@ -21,3 +24,5 @@ a:hover {
 li {
   list-style: none;
 }
+
+@import "./theme-mobile.scss";
