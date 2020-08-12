@@ -1,0 +1,47 @@
+@import "../../style/theme.scss";
+
+.header {
+  height: 5vh;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-family: $font-family;
+    text-align: left;
+    font-weight: bolder;
+    color: $secondary-color;
+    font-size: 2em;
+  }
+}
+
+.menu {
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: right;
+  color: $text-color;
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid $foreground-color;
+  }
+  a:last-of-type {
+    border-right: none;
+  }
+  .selected {
+    font-weight: bold;
+  }
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: $text-color;
+  font-size: 1em;
+  transform: scaleX(1.15);
+  transform-origin: 0 0;
+  text-align: left;
+}
+
+@import "./Header-mobile";
