@@ -1,8 +1,9 @@
-@import "./reset.scss";
-@import "./colors.scss";
-@import "./fonts.scss";
+@import './reset.scss';
+@import './colors.scss';
+@import './fonts.scss';
 
-$font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+$font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$line-color: rgba(209, 225, 230, 0.1);
 
 body {
   color: $foreground-color;
@@ -25,4 +26,4 @@ li {
   list-style: none;
 }
 
-@import "./theme.mobile.scss";
+@import './theme.mobile.scss';
