@@ -1,15 +1,26 @@
 import React from 'react';
-import { Header } from '../Header';
-import { Blog } from '../Blog';
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import {Header} from '../Header';
+import {Blog} from '../Blog';
+import {About} from '../About';
 
 import './app.sass';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />;
-      <Blog />
-    </>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Blog />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
