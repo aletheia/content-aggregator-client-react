@@ -1,7 +1,7 @@
 import React, {Component, ComponentProps} from 'react';
 
 import './about.scss';
-import {loadAboutInfo} from '../../actions/about';
+import {loadAboutInfo} from '../../actions';
 
 import {SocialBar, SocialBarProperties} from './SocialBar';
 
@@ -25,8 +25,8 @@ export class About extends Component<AboutProps, AboutState> {
   }
 
   async componentDidMount() {
-    const about = await loadAboutInfo();
-    this.setState(Object.assign(this.state, {about}));
+    const aboutInfo = await loadAboutInfo();
+    this.setState(Object.assign(this.state, {about: aboutInfo}));
   }
 
   render() {
