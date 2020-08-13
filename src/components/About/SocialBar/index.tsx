@@ -12,7 +12,7 @@ import {faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 import './social-bar.scss';
 
-interface SocialBarProperties {
+export interface SocialBarProperties {
   twitter?: string;
   linkedin?: string;
   github?: string;
