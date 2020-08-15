@@ -45,4 +45,15 @@
   width: max-content;
 }
 
+.credits {
+  text-align: right;
+  font-size: 0.8em;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.2em;
+  a {
+    font-weight: normal;
+  }
+}
+
 @import './entry.mobile.scss';

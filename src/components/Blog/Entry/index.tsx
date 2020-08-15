@@ -5,35 +5,36 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCalendar} from '@fortawesome/free-solid-svg-icons';
 
 import './entry.scss';
+import {BlogPost} from '../../../actions';
 
-export interface BlogEntry {
-  date: Date;
-  title: string;
-  abstract: string;
-  tags: string[];
-  link: string;
-}
+const lang = 'en';
+const i18n = {
+  en: {
+    readMode: 'Read the full article',
+    by: 'by ',
+    writtenIn: 'written in ',
+  },
+};
 
-export const Entry = () => {
-  const entry = {
-    date: '2020-08-11',
-    title: 'How Neosperience Serverless to build a platform',
-    abstract:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: ['AWS', 'cloud', 'serverless'],
-    link: '',
-  };
-  const {date, title, abstract, tags, link} = entry;
+export const Entry = ({post}: {post: BlogPost}) => {
+  const {date, title, abstract, author, language, tags, link} = post;
   return (
     <li className="post">
       <div className="datetime">
         <FontAwesomeIcon className="fa-icon" icon={faCalendar} />
-        {date}
+        {date.toLocaleDateString()}
       </div>
       <div className="title">{title}</div>
       <p>{abstract}</p>
       <div className="more">
-        <a href={link}>Read the full article</a>
+        <a href={link}>{i18n[lang].readMode}</a>
+      </div>
+      <div className="credits">
+        {i18n[lang].by}
+        <a>{author.name}</a>
+        <br />
+        {i18n[lang].writtenIn}
+        <a>{language}</a>
       </div>
       <TagList tags={tags} />
     </li>

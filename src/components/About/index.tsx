@@ -1,21 +1,15 @@
-import React, {Component, ComponentProps} from 'react';
+import React, {Component} from 'react';
 
 import './about.scss';
-import {loadAboutInfo} from '../../actions';
+import {loadAboutInfo, AboutInfo} from '../../actions';
 
-import {SocialBar, SocialBarProperties} from './SocialBar';
+import {SocialBar} from './SocialBar';
 
 interface AboutProps {
   about?: string;
 }
 interface AboutState {
-  about?: {
-    name: string;
-    picture: string;
-    bio: string;
-    intro: string;
-    social: SocialBarProperties;
-  };
+  about?: AboutInfo;
 }
 
 export class About extends Component<AboutProps, AboutState> {
