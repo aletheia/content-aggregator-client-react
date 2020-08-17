@@ -8,7 +8,8 @@
       "url": "https://www.bianchiluca.com"
     },
     "language": "english",
-    "abstract": "Leverage the power of Amazon SageMaker and PyTorch Lightning to build ML models avoiding to manage boilerplate code and infrastructure.",
+    "abstract": "Leverage the power of <strong><a href=\"https://aws.amazon.com/sagemaker\">Amazon SageMaker</a></strong> and <strong><a href=\"https://github.com/PyTorchLightning/pytorch-lightning\">PyTorch Lightning</a></strong> to build ML models avoiding to manage boilerplate code and infrastructure.",
+    "cover": "https://miro.medium.com/max/3840/1*3tQ4tDDAZHNqpjVQi36HkA.jpeg",
     "tags": ["pytorch", "machine learning", "aws", "sagemaker"],
     "link": "https://towardsdatascience.com/building-a-neural-network-on-amazon-sagemaker-with-pytorch-lightning-63730ec740ea"
   },
