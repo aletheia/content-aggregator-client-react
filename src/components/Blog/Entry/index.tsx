@@ -1,41 +1,81 @@
 import React from 'react';
 
+import {BlogPost} from '../../../actions';
+import {BlogDate} from './BlogDate';
 import {TagList} from './TagList';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCalendar} from '@fortawesome/free-solid-svg-icons';
 
-import './entry.scss';
+import styled from 'styled-components';
 
-export interface BlogEntry {
-  date: Date;
-  title: string;
-  abstract: string;
-  tags: string[];
-  link: string;
-}
+import {useTranslation} from 'react-i18next';
+import {Credits} from './Credits';
+import {device} from '../../../style/device';
 
-export const Entry = () => {
-  const entry = {
-    date: '2020-08-11',
-    title: 'How Neosperience Serverless to build a platform',
-    abstract:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: ['AWS', 'cloud', 'serverless'],
-    link: '',
-  };
-  const {date, title, abstract, tags, link} = entry;
+const Container = styled.li`
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ${({theme}) => theme.borderColor};
+`;
+
+const Title = styled.div`
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: ${({theme}) => theme.primaryColor};
+  background: -webkit-linear-gradient(
+    ${({theme}) => theme.secondaryColor},
+    ${({theme}) => theme.primaryColor}
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  @media ${device.iphone} {
+    display: block;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+`;
+
+const Abstract = styled.p`
+  font-weight: lighter;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+  strong {
+    font-weight: normal;
+    color: ${({theme}) => theme.primaryColor};
+  }
+  a {
+    font-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    font-decoration: underline;
+  }
+`;
+
+const More = styled.div`
+  display: flex;
+  font-weight: normal;
+  color: ${({theme}) => theme.accentColor};
+  padding-bottom: 10px;
+`;
+
+export const Entry = ({post}: {post: BlogPost}) => {
+  const {t} = useTranslation();
+  const {date, title, abstract, author, language, tags, link} = post;
+
   return (
-    <li className="post">
-      <div className="datetime">
-        <FontAwesomeIcon className="fa-icon" icon={faCalendar} />
-        {date}
-      </div>
-      <div className="title">{title}</div>
-      <p>{abstract}</p>
-      <div className="more">
-        <a href={link}>Read the full article</a>
-      </div>
+    <Container>
+      <BlogDate date={date} />
+      <Title>{title}</Title>
+      <Abstract dangerouslySetInnerHTML={{__html: abstract}} />
+      <More>
+        <a href={link}>{t('readMore')}</a>
+      </More>
+      <Credits author={author} language={language} />
       <TagList tags={tags} />
-    </li>
+    </Container>
   );
 };

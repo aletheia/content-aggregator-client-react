@@ -1,0 +1,136 @@
+[
+  {
+    "uuid": "af113184-a15c-46cf-8cf6-66a1438bfbe2",
+    "date": "2020-08-11",
+    "title": "Building a Neural Network on Amazon SageMaker with PyTorch Lightning",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Leverage the power of <strong><a href=\"https://aws.amazon.com/sagemaker\">Amazon SageMaker</a></strong> and <strong><a href=\"https://github.com/PyTorchLightning/pytorch-lightning\">PyTorch Lightning</a></strong> to build ML models avoiding to manage boilerplate code and infrastructure.",
+    "cover": "https://miro.medium.com/max/3840/1*3tQ4tDDAZHNqpjVQi36HkA.jpeg",
+    "tags": ["pytorch", "machine learning", "aws", "sagemaker"],
+    "link": "https://towardsdatascience.com/building-a-neural-network-on-amazon-sagemaker-with-pytorch-lightning-63730ec740ea"
+  },
+  {
+    "uuid": "66e22584-ebc9-4d5c-99a1-e7aafe30f999",
+    "date": "2020-08-11",
+    "title": "Neosperience Cloud empowering product development on AWS",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Join us in this deep dive on Neosperience 2020 roadmap becoming the foundation technology of products.",
+    "tags": ["aws", "cloud", "serverless", "product management"],
+    "link": "https://medium.com/@aletheia/neosperience-cloud-empowering-product-development-on-aws-900fcab84663"
+  },
+  {
+    "uuid": "179ec3ff-1921-4b38-96d1-2d0ec5ac4337",
+    "date": "2020-08-11",
+    "title": "A practical application of Amazon Leadership Principles",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Teams with different cultures and history but excellent at providing value to customers means being able to match strategies that works.",
+    "tags": ["amazon", "leadership", "product management"],
+    "link": "https://medium.com/@aletheia/a-practical-application-of-amazon-leadership-principles-1aad8ce26a0d"
+  },
+  {
+    "uuid": "66e242684-ebc3-4d5c-59a1-e4aafe32f949",
+    "date": "2020-08-11",
+    "title": "Neosperience Cloud empowering product development on AWS",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Join us in this deep dive on Neosperience 2020 roadmap becoming the foundation technology of products.",
+    "tags": ["aws", "cloud", "serverless", "product management"],
+    "link": "https://medium.com/@aletheia/neosperience-cloud-empowering-product-development-on-aws-900fcab84663"
+  },
+
+  {
+    "uuid": "61688f11d-3430-4a5c-8981-673ac0868fd0",
+    "date": "2020-08-11",
+    "title": "Migrating Image Memorability service to AWS Lambda using a shared Elastic File System volume",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Discover how we migrated a whole AI service within Neosperience Cloud to AWS Lambda leveraging AWS Elastic File System to serve ML models.",
+    "tags": ["lambda", "efs", "serverless", "machine learning"],
+    "link": "https://medium.com/@aletheia/migrating-image-memorability-service-to-aws-lambda-using-a-shared-elastic-file-system-volume-582218ca91c2"
+  },
+
+  {
+    "uuid": "c56ee1c9-5aaa-499c-a004-0c368b82ddc9",
+    "date": "2020-08-11",
+    "title": "Architetture a microservizi, tra hype e casi d’uso — pt.1",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "it",
+    "abstract": "In questo articolo introduttivo vediamo quali caratteristiche sono proprie delle architetture a microservizi e quali benefici portano",
+    "tags": ["microservizi", "architetture"],
+    "link": "https://medium.com/serverlessitaly/architetture-a-microservizi-tra-hype-e-casi-duso-parte-1-4e29c80b735"
+  },
+
+  {
+    "uuid": "146c7302-4f1e-486f-af56-ff9e6c33e9b9",
+    "date": "2020-08-11",
+    "title": "Come abilitare la regione italiana di AWS e primi test di connettività",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "it",
+    "abstract": "In questo primo articolo rivolto alla community italiana vediamo come abilitare la nuova region AWS Europe (Milano) nel nostro account.",
+    "tags": ["aws", "cloud", "serverless", "product management"],
+    "link": "https://medium.com/serverlessitaly/come-abilitare-la-regione-italiana-di-aws-e-primi-test-di-connettivit%C3%A0-56458753e58f"
+  },
+  {
+    "uuid": "11e321fe-69e4-4dfe-ac54-735624459559",
+    "date": "2020-08-11",
+    "title": "Istio is moving back to the monolith, but it doesn’t mean you have to do the same",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Istio moving back to a monolithic architecture poses some questions to be addressed whether microservices are a good choice",
+    "tags": ["microservices"],
+    "link": "https://medium.com/@aletheia/istio-back-to-monolith-and-you-88dd3bd23265"
+  },
+  {
+    "uuid": "07d22db6-0d8a-4aa1-9390-3e497c079189",
+    "date": "2019-11-21",
+    "title": "Serverless Big Data: lessons learned building an event ingestion pipeline on Amazon Web Services",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "Istio moving back to a monolithic architecture poses some questions to be addressed whether microservices are a good choice",
+    "tags": ["serverless", "aws", "big data"],
+    "link": "https://medium.com/@aletheia/serverless-big-data-ee47694835c7"
+  },
+  {
+    "uuid": "3e78032a-1f9c-4f2a-b64c-27eb3be6e2b8",
+    "date": "2019-09-04",
+    "title": "Neosperience Cloud journey from monolith to serverless microservices with Amazon Web Services",
+    "author": {
+      "name": "Luca Bianchi",
+      "url": "https://www.bianchiluca.com"
+    },
+    "language": "english",
+    "abstract": "The story about how Neosperience reached the microservices graal and the issues we faced.",
+    "tags": ["serverless", "aws", "use case"],
+    "link": "https://medium.com/@aletheia/neosperience-journey-to-microservices-f900277987d5"
+  }
+]

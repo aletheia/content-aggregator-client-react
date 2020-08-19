@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {SocialContacts} from '../../../actions/about';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
@@ -12,15 +14,7 @@ import {faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 import './social-bar.scss';
 
-interface SocialBarProperties {
-  twitter?: string;
-  linkedin?: string;
-  github?: string;
-  speakerdeck?: string;
-  medium?: string;
-  twitch?: string;
-  youtube?: string;
-}
+type SocialBarProperties = SocialContacts;
 
 export const SocialBar = ({
   twitter,
