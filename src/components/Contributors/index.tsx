@@ -29,8 +29,7 @@ export class Contributors extends Component<
 
   render() {
     const renderContributor = (contributor: Contributor) => {
-      console.log('DADADSADADADSADASDASDS');
-      const {name, picture, intro, social} = contributor;
+      const {name, picture, intro, social, badges} = contributor;
       return (
         <div className="about" key={name + '-' + picture}>
           <div className="picture">
@@ -39,6 +38,11 @@ export class Contributors extends Component<
 
           <h2> {name} </h2>
           <p dangerouslySetInnerHTML={{__html: intro}}></p>
+          <div className="badges">
+            {badges?.map(badge => (
+              <img src={badge} key={badge} />
+            ))}
+          </div>
           <SocialBar
             twitter={social.twitter}
             linkedin={social.linkedin}
@@ -61,9 +65,11 @@ export class Contributors extends Component<
     } else {
       return (
         <>
-          {this.state.contributors.map(contributor =>
-            renderContributor(contributor)
-          )}
+          <div className="contributors">
+            {this.state.contributors.map(contributor =>
+              renderContributor(contributor)
+            )}
+          </div>
         </>
       );
     }

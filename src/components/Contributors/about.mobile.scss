@@ -1,9 +1,15 @@
-.about {
-  h2 {
-    font-size: 2em;
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contributors {
+    margin-top: 200px;
   }
-  p {
-    text-align: center;
-    font-size: 1em;
+
+  .about {
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      text-align: center;
+      font-size: 1em;
+    }
   }
 }
