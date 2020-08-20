@@ -38,6 +38,12 @@ const Title = styled.div`
   }
 `;
 
+const Link = styled.a`
+  a:hover {
+    text-decoration: underline;
+  }
+`;
+
 const Abstract = styled.p`
   font-weight: lighter;
   line-height: 1.5em;
@@ -69,10 +75,16 @@ export const Entry = ({post}: {post: BlogPost}) => {
   return (
     <Container>
       <BlogDate date={date} />
-      <Title>{title}</Title>
+      <Title>
+        <Link href={link} target="_new">
+          {title}
+        </Link>
+      </Title>
       <Abstract dangerouslySetInnerHTML={{__html: abstract}} />
       <More>
-        <a href={link}>{t('readMore')}</a>
+        <a href={link} target="_new">
+          {t('readMore')}
+        </a>
       </More>
       <Credits author={author} language={language} />
       <TagList tags={tags} />
