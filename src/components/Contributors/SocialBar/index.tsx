@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {SocialContacts} from '../../../actions/about';
+import {SocialContacts} from '../../../actions/contributors';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 

@@ -1,59 +1,53 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {useTranslation} from 'react-i18next';
 
-import './about.scss';
-import {loadAboutInfo, AboutInfo} from '../../actions';
+import styled from 'styled-components';
+import {Title} from '../Title';
 
-import {SocialBar} from './SocialBar';
+const Container = styled.div`
+  margin: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+`;
 
-interface AboutProps {
-  about?: string;
-}
-interface AboutState {
-  about?: AboutInfo;
-}
-
-export class About extends Component<AboutProps, AboutState> {
-  constructor(props: AboutProps) {
-    super(props);
-    this.state = {};
+const Paragraph = styled.p`
+  line-height: 1.8em;
+  font-size: 1.1em;
+  font-weight: lighter;
+  text-align: justify;
+  a {
+    font-weight: bold;
   }
-
-  async componentDidMount() {
-    const aboutInfo = await loadAboutInfo();
-    this.setState(Object.assign(this.state, {about: aboutInfo}));
+  strong {
+    font-weight: bold;
   }
+`;
 
-  render() {
-    if (!this.state.about) {
-      return (
-        <>
-          <div className="about">
-            <h2> Loading... </h2>
-          </div>
-        </>
-      );
-    } else {
-      const {name, picture, bio, intro, social} = this.state.about;
-      return (
-        <>
-          <div className="about">
-            <div className="picture">
-              <img src={picture} />
-            </div>
+const Header = styled.h2`
+  font-style: italic;
+  margin-bottom: 1vh;
+  font-size: 1.3em;
+`;
 
-            <h2> {name} </h2>
-            <p dangerouslySetInnerHTML={{__html: intro}}></p>
-            <SocialBar
-              twitter={social.twitter}
-              linkedin={social.linkedin}
-              speakerdeck={social.speakerdeck}
-              github={social.github}
-              medium={social.medium}
-            />
-            <p dangerouslySetInnerHTML={{__html: bio}}></p>
-          </div>
-        </>
-      );
-    }
-  }
-}
+const Signature = styled.h3`
+  text-align: right;
+  font-style: italic;
+  font-size: 1.3em;
+  padding-right: 20px;
+`;
+
+export const About = () => {
+  const {t} = useTranslation();
+  return (
+    <>
+      <div>
+        <Title />
+        <Container>
+          <Header>{t('about_title')}</Header>
+          <Paragraph dangerouslySetInnerHTML={{__html: t('about_content')}} />
+          <Signature>{t('about_signature')}</Signature>
+        </Container>
+      </div>
+    </>
+  );
+};

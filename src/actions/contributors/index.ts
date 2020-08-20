@@ -8,14 +8,17 @@ export interface SocialContacts {
   youtube?: string;
 }
 
-export interface AboutInfo {
+export interface Contributor {
   name: string;
   picture: string;
-  bio: string;
   intro: string;
+  badges?: string[];
   social: SocialContacts;
 }
-export const loadAboutInfo = async () => {
-  const aboutInfo = await import('../../data/about/luca.json');
-  return aboutInfo;
+export const loadContributors = async () => {
+  const contributors: Contributor[] = (
+    await import('../../data/contributors/list.json')
+  ).contributors;
+  console.log(contributors);
+  return contributors;
 };

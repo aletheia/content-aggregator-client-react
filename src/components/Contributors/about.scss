@@ -1,0 +1,44 @@
+.about {
+  margin: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+  }
+  p {
+    line-height: 1.8em;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-align: justify;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20 0 20 0;
+  img {
+    height: 30vh;
+  }
+}
+
+.badges {
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  img {
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@import './about.mobile.scss';
