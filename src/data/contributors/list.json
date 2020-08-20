@@ -1,0 +1,18 @@
+{
+  "contributors": [
+    {
+      "name": "Luca Bianchi",
+      "picture": "https://i.imgur.com/GaSF5qE.png",
+      "intro": "Chief Technology Officer at <a href=\"www.neosperience.com\">Neosperience</a>.<br/><a href=\"https://www.meetup.com/it-IT/Serverless-Italy/\">Serverless Meetup Italy</a> co-founder.<br/><a href=\"milan.serverlessdays.io\">ServerlessDays Italy</a> co- organizer.<br/><a href=\"https://aws.amazon.com/it/developer/community/community-builders/\">AWS Community builder</a> member since July 2020",
+      "social": {
+        "twitter": "https://twitter.com/bianchiluca",
+        "linkedin": "https://www.linkedin.com/in/lucabianchipavia/",
+        "github": "https://github.com/aletheia",
+        "speakerdeck": "https://speakerdeck.com/aletheia",
+        "medium": "https://medium.com/@aletheia",
+        "twitch": "",
+        "youtube": ""
+      }
+    }
+  ]
+}

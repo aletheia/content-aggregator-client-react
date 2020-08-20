@@ -1,0 +1,32 @@
+.about {
+  margin: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  h2 {
+    line-height: 2.5em;
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+  }
+  p {
+    line-height: 1.8em;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-align: justify;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20 0 20 0;
+  img {
+    height: 20vh;
+  }
+}
+
+@import './about.mobile.scss';
