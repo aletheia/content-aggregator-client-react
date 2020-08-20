@@ -26,20 +26,6 @@
     "link": "https://medium.com/@aletheia/a-practical-application-of-amazon-leadership-principles-1aad8ce26a0d"
   },
   {
-    "uuid": "66e242684-ebc3-4d5c-59a1-e4aafe32f949",
-    "date": "2020-08-11",
-    "title": "Neosperience Cloud empowering product development on AWS",
-    "author": {
-      "name": "Luca Bianchi",
-      "url": "https://www.serverless4all.com"
-    },
-    "language": "english",
-    "abstract": "Join us in this deep dive on Neosperience 2020 roadmap becoming the foundation technology of products.",
-    "tags": ["aws", "cloud", "serverless", "product management"],
-    "link": "https://medium.com/@aletheia/neosperience-cloud-empowering-product-development-on-aws-900fcab84663"
-  },
-
-  {
     "uuid": "61688f11d-3430-4a5c-8981-673ac0868fd0",
     "date": "2020-08-11",
     "title": "Migrating Image Memorability service to AWS Lambda using a shared Elastic File System volume",
