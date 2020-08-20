@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 import './animation.scss';
 
-export const BoxAnimation = ({ children }: { children: ReactNode }) => {
+export const BoxAnimation = ({children}: {children: ReactNode}) => {
   return (
     <>
       <div className="container">{children}</div>
