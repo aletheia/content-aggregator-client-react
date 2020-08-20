@@ -1,16 +1,12 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import common_en from './translations/en/common.json';
 
 i18n.use(LanguageDetector).init({
+  lng: 'en',
   resources: {
     en: {
-      translations: {
-        readMore: 'Read the full article',
-        by: 'by ',
-        writtenIn: 'written in ',
-        english: 'english',
-        italian: 'italian',
-      },
+      translations: common_en,
     },
   },
   fallbackLng: 'en',

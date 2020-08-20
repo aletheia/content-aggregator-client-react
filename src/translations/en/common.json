@@ -1,0 +1,13 @@
+{
+  "readMore": "Read the full article",
+  "by": "by ",
+  "writtenIn": "written in ",
+  "english": "english",
+  "italian": "italian",
+  "menu_blog": "Blog",
+  "menu_about": "About",
+  "menu_contributors": "Contributors",
+  "about_title": "About this initiative",
+  "about_content": "We live within knowledge boundaries which shape our vision of the world but often prevent us from understanding different domain and contexts. As developers and software architects, we have a privileged position acting as digital transformation enablers for our customers and peers. <br/><br/> It's an amazing time to be alive: <br/>we're on the edge of a new wave of an industrial revolution that, if driven wisely, could improve the lives of our children for many decades. <br/> <br/> This revolution require a lot of skilled professionals, able to embrace and leverage the full potential of innovative technologies such as <strong>Blockchain</strong>, <strong>AI</strong> and <strong>serverless</strong>.<br/> <br/> Knowledge is something very unique because is enriched when shared between others. The idea of this website is to aggregate and share as many pieces of knowledge as possible, from the widest possible array of contributor.<br/> <br/> Today we start small with few articles, but we aim to onboard many other participants, willing to share their knowledge.<br/> This website is and will always be a directory where content about innovative technologies can be found, pointing the reference to other sources on the web where an article or a tutorial is published.<br/> <br/> Feel free to start <a href=\"/blog\">searching our library</a>, or <a href=\"https://github.com/aletheia/website-client-react\">open a PR to become a contributor!</a><br/> ",
+  "about_signature": "Luca"
+}
