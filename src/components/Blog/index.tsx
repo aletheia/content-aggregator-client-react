@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './blog.scss';
 
-import {Title} from './Title';
+import {Title} from '../Title';
 import {Entry} from './Entry';
 import {BlogPost, loadPosts} from '../../actions';
 

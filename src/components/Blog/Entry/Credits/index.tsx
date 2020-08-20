@@ -24,10 +24,10 @@ export const Credits = ({
   const {t} = useTranslation();
   return (
     <CreditsContainer>
-      {t('by')}
+      {t('by') + ' '}
       <CreditsLink href={author.url}>{author.name}</CreditsLink>
       <br />
-      {t('writtenIn')}
+      {t('writtenIn') + ' '}
       <CreditsLink>{t(language)}</CreditsLink>
     </CreditsContainer>
   );
